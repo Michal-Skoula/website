@@ -1,0 +1,117 @@
+#hero {
+  max-width: 100%;
+  padding: var(--s800) var(--content-padding);
+  z-index: 1;
+  overflow: hidden;
+}
+#hero .max-content-width {
+  padding: 0 var(--s700);
+}
+#hero .max-content-width::before {
+  content: url(../assets/particles.svg);
+  width: 1100px;
+  position:absolute;
+  top:-400px;
+  right:0px;
+  z-index: -1;
+}
+.hero-content {
+  display: flex;
+  margin-top:var(--s700);
+  justify-content: space-between;
+}
+.hero-content .text {
+  max-width: 33.125rem /* 530px */;
+  z-index: 1;
+  align-self: center;
+}
+.hero-content h1 {
+  margin-bottom: var(--s200);
+}
+.hero-content .button-primary {
+  margin-top: var(--s600);
+}
+#hero-img {
+  height:100%;
+}
+#hero-img > img {
+  /* position: absolute; */
+  max-width: 28rem;
+  right:0;
+  z-index: 0;
+}
+/* Hides transition between bg and image, gradient */
+#hero-img::before {
+  content:'';
+  position: absolute;
+  background: linear-gradient(180deg, rgba(120, 18, 18, 0) 0%, rgba(20, 22, 27, 90%) 23%, var(--clr-bg) 80%);
+  width: 100%;
+  height:50%;
+  z-index: 100;
+  bottom:calc(var(--s900) * -1);
+}
+.mobile-display-btn {
+  position: relative;
+  display: none;
+  z-index: 100;
+  /* Second button that displays under the image for mobile */
+}
+@media screen and (max-width: 60rem) {
+  #hero {
+    padding-bottom: 0;
+  }
+  #hero .max-content-width {
+    padding: 0;
+  }
+  .hero-content {
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--s400);
+    justify-self: flex-start;
+    min-width: fit-content;
+  }
+  #hero-img {
+    margin: 0 auto;
+    width: fit-content;
+    min-height: 15.625rem;
+  }
+  #hero-img > img {
+    width: 100%;
+  }
+  #hero-img::before {
+    width: 100vw;
+    height: 10%;
+    bottom:0;
+    left:0;
+  }
+
+
+
+}
+@media screen and (max-width: 30rem) {
+  #hero .text {
+    max-width: 22rem;
+  }
+  #hero {
+    padding: var(--s900) var(--s400) var(--s400) var(--s400);
+  }
+  .hero-content {
+    margin-top: var(--s500);
+  }
+  #hero .button-primary {
+    width: 100%;
+  }
+  #hero-img::before {
+    bottom:10%;
+  }
+  .desktop-display-btn {
+    display: none;
+  }
+  .mobile-display-btn {
+    display: inherit;
+  }
+  .hero-content .button-primary {
+    margin-top: 0;
+    margin-bottom: var(--s600)
+  }
+}

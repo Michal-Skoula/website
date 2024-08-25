@@ -1,0 +1,16 @@
+{
+  "name": "ms/hero",
+  "title": "Hero Section",
+  "description": "Hero section with left side h1, p, button, right side img",
+  "style": [ "file:./dhero.css" ],
+  "category": "component",
+  "icon": "admin-comments",
+  "keywords": ["hero"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "hero.php"
+  },
+  "supports": {
+      "anchor": true
+  }
+}

@@ -1,0 +1,73 @@
+#footer .max-content-width {
+  gap: var(--s700);
+  padding: var(--s800) var(--s600) var(--s900) var(--s600);
+  max-width: 1400px;
+
+}
+#footer {
+  background-color: var(--clr-footer-gradient);
+
+}
+#footer .main-body{
+  gap: var(--s800);
+  flex-wrap: wrap;
+}
+#footer .socials {
+  flex-wrap: wrap;
+}
+#footer .socials img {
+  height: var(--s600);
+}
+#footer .socials a {
+  /* text-decoration: none; */
+  display: inline-block;
+}
+#footer .main-body .cta {
+  max-width: 350px;
+  gap:var(--s500);
+}
+#footer .main-body .cta h3 {
+  font-weight: 500;
+}
+#footer .main-body .cta > .button-primary {
+  display: inline-block;
+  width: max-content;
+  padding: var(--s300) var(--s600);
+}
+#footer .main-body .links {
+  flex-wrap: wrap;
+  gap: var(--s800);
+}
+#footer .main-body .link {
+  gap:var(--s200);
+}
+#footer .main-body a {
+  color: var(--clr-paragraph);
+  text-decoration: none;
+}
+#footer .main-body a:hover,
+#footer .main-body a:active {
+  color: var(--clr-paragraph);
+  text-decoration: underline;
+}
+#footer .ico-phone::before,
+#footer .ico-mail::before,
+#footer .ico-linkedin::before {
+  margin-right: var(--s100);
+}
+#footer .ico-phone::before {
+  content: url(../assets/ico-call.svg);
+}
+#footer .ico-mail::before {
+  content: url(../assets/ico-send.svg);
+}
+#footer .ico-linkedin::before {
+  content: url(../assets/ico-linkedin.svg);
+}
+#footer .copyright {
+  color: #7E7E7E;
+  flex-wrap: wrap;
+}
+#footer .copyright > .row {
+  gap:var(--s200);
+}

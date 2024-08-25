@@ -1,0 +1,25 @@
+#contact {
+  margin-top:var(--s700);
+  text-align: center;
+}
+#contact .booking-window {
+  padding: 0 var(--s400) 0 var(--s400); 
+  position: relative;
+  background-image: url(../assets/vector_cta.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+@media screen and (max-width: 60rem) {
+  #contact .booking-window {
+    background-size: cover;
+  }
+  .calendly-inline-widget {
+    height: 1200px !important;
+  }
+}
+@media screen and (max-width: 42.5rem) {
+  #contact .booking-window {
+    padding-top: var(--s700);
+  }
+}

@@ -1,0 +1,310 @@
+/* 
+ * 
+ * Personal Website of Michal Škoula. 
+ * Feel free to take inspiration, but please don't steal my work :)
+ *
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+ 
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-size:20px;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+ :root {
+
+  /* Colors */
+  --clr-bg: #14161B;
+  --clr-bg-testimonial: #1A1D24;
+  --clr-primary: #386EEB;
+  --clr-primary-text: #7BA2FD;
+  --clr-white: #ffffff;
+  --clr-black: #1e1e1e;
+  --clr-paragraph: #D3D3D3;
+  /* --clr-primary-gradient: linear-gradient(100deg, #1F2433 0%, #1A2545 100%); */
+  --clr-primary-gradient: #1D243C;
+  /* --clr-footer-gradient: linear-gradient(100deg, #161A1E 0%, #0E121D 45%, #1A202E 95%); */
+  --clr-footer-gradient: #0a0e16;
+
+  /* Sizing - Breakpoints */
+  --mobile: 30rem; /* 480px */
+  --tablet: 50rem; /* 800px */
+  --desktop: 62.5rem; /* 1000px */
+
+  /* Sizing - text */
+  --h1: 3rem;
+  --h2: 2.5rem;
+  --h3: 1.5rem;
+  --p: 1rem;
+  --small: 0.75rem;
+
+  /* Sizing - Misc */
+  --border-radius: 0.625rem;
+  --max-content-width: 75rem;
+  --content-padding: var(--s700);
+
+  /* Sizing - Design system */
+  --px1: 0.0625rem;
+  --s100: 0.25rem;  /* 4px */
+  --s200: 0.5rem;   /* 8px */
+  --s300: 0.75rem;  /* 12px */
+  --s400: 1rem;     /* 16px */
+  --s500: 1.5rem;   /* 24px */
+  --s600: 2rem;     /* 32px */
+  --s700: 3rem;     /* 48px */
+  --s800: 4rem;     /* 64px */
+  --s900: 6rem;     /* 96px */
+}
+@media screen and (max-width: 90rem) {
+  * {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 30rem) {
+  :root {
+    --h1: 1.8rem;
+    --h2: 1.6rem;
+    --h3: 1.3rem;
+    
+    --content-padding: var(-s400);
+
+  }
+}
+
+/*
+ * Global styling 
+ */
+
+body {
+  background-color: var(--clr-bg);
+  color:var(--clr-paragraph);
+}
+h1, .h1 {
+  font-size: var(--h1);
+  line-height: auto;
+  font-weight: 600;
+  color:var(--clr-white);
+  letter-spacing: var(--px1);
+}
+h2, .h2 {
+  font-size: var(--h2);
+  line-height: auto;
+  font-weight: 500;
+  color:var(--clr-white);
+  letter-spacing: var(--px1);
+}
+h3, .h3 {
+  font-size: var(--h3);
+  line-height: auto;
+  font-weight: 400;
+  color:var(--clr-white)
+}
+p, ul, ol, li, a {
+  font-size: var(--p);
+  line-height: var(--s500);
+  font-weight: 400;
+}
+a:not(.button-primary) {
+  color:var(--clr-primary-text);
+}
+a:not(.button-primary):hover,
+a:not(.button-primary):active {
+  color:var(--clr-primary);
+}
+img {
+  max-width: 100%;
+}
+button, .button-primary {
+  padding: var(--s300) var(--s500);
+  background-color: var(--clr-primary);
+  border-radius: var(--border-radius);
+  color:var(--clr-white) !important;
+  text-decoration: none !important;
+  cursor:pointer;
+  transition: all 150ms;
+  display: inline-block;
+  text-align: center;
+
+  /* Important to prevent override from CSS mistake*/
+} 
+button:hover, 
+button:active,
+.button-primary:active,
+.button-primary:hover {
+  background-color: var(--clr-white);
+  color:var(--clr-primary) !important;
+}
+.max-content-width {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 
+* Helper classes - flexbox
+*/
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-content: center;
+}
+
+/* 
+* Helper classes - other
+*/
+.full-width {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* Fog for hero section */
+
+#nav {
+  padding: var(--content-padding);
+  padding-bottom: var(--s800);
+  z-index: 1;
+  flex-wrap: wrap;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+}
+#nav .max-content-width {
+  padding: 0 var(--s700);
+}
+a.nav-logo {
+  height: 100%;
+  display: flex;
+  align-self: center;
+}
+a.nav-logo > img {
+  height: var(--s600);
+}
+#nav ul {
+  gap: var(--s500);
+  align-content: center;
+} 
+#nav li {
+  list-style: none;
+  height: fit-content;
+  align-self:center;
+}
+/* Styles for both mobile and desktop navigations */
+#nav a:not(.button-primary),
+#main-menu a:not(.button-primary) {
+  color:var(--clr-white);
+  text-decoration: none;
+}
+#nav a:hover:not(.button-primary),
+#main-menu a:hover:not(.button-primary) {
+  color: var(--clr-primary-text);
+  text-decoration: underline;
+}
+label.btn-menu-hero {
+  z-index: 10000;
+}
+label.btn-menu-hero img {
+  display: none;
+  height: var(--s600);
+  margin-top:0.35rem;
+  cursor: pointer;
+}
+#btn-menu-hero {
+  display: none; 
+  /* Hides */
+}
+
+
+#main-menu {
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+}
+
+@media screen and (max-width: 60rem) {
+  #nav {
+    padding: var(--s600) var(--s400)
+  }
+  #nav .max-content-width {
+    padding: 0;
+  }
+  #nav li:not(.menu) {  
+  display: none;
+  }
+  label.btn-menu-hero img {
+    display: inline-block;
+  }
+  body:has(#btn-menu-hero:checked) {
+    overflow: hidden;
+    pointer-events: none;
+  }
+  #main-menu {
+    position: inherit;
+    display: flex;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    height: 100svh;
+    z-index: 1000;
+    background-color: rgba(25, 25, 25, 0.845);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    transition: opacity 300ms;
+  }
+  #main-menu ul {
+    justify-self: center;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    gap:var(--s500);
+  }
+  #main-menu a {
+    font-size: var(--h3);
+  }
+  #main-menu .menu {
+    position: absolute;
+    top:var(--content-padding);
+    right:var(--content-padding);
+  }
+  #main-menu:has(#btn-menu-hero:checked)  {
+    pointer-events: all;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 30rem) {
+  
+  #main-menu .menu {
+    top:var(--s600);
+    right:var(--s400);
+  }
+  
+  
+  
+}
