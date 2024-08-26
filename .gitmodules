@@ -1,0 +1,3 @@
+[submodule "static-site"]
+	path = static-site
+	url = git@github.com:Michal-Skoula/website.git
