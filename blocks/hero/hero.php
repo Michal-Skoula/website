@@ -18,7 +18,7 @@ if ( ! empty( $block['anchor'] ) ) {
     $anchor = 'id="' . esc_attr( $block['anchor'] ) . '" ';
 }
 ?>
-<div id="hero">
+<div id="hero" class="section">
     <div class="max-content-width">
       <div class="hero-content row">
         <div class="text">

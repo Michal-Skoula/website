@@ -8,7 +8,7 @@
   
 </head>
 <body>
-<nav id="main-menu">
+<nav id="main-menu" class="section">
   <input type="checkbox" id="btn-menu-hero">
   <ul class="column">
     <li><a class="js-close-menu" href="#">O mně</a></li>
@@ -22,7 +22,7 @@
     </li>
   </ul>
 </nav>
-<div id="nav">
+<div id="nav" class="section">
   <div class="max-content-width">
     <header class="row space-between align-center">
       <a class="nav-logo" href="/"><img class="" src="<? echo image('logo-light.svg') ?>" alt="Logo Michal Škoula"></a>

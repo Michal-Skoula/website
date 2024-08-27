@@ -1,5 +1,5 @@
-<img style="margin-bottom: -6px;" src="<? echo image('divider-right.svg')?>" alt="">
-  <footer id="footer">
+<img class="divider" src="<? echo image('divider-right.svg')?>" alt="">
+  <footer id="footer" class="section">
     <div class="max-content-width column">
       <div class="socials row space-between">
         <img src="<?php echo image('logo-light.svg') ?>" alt="Logo Michal Škoula">

@@ -8,6 +8,7 @@ add_action('after_setup_theme', 'ms_theme_support');
 
 function ms_register_styles () {
   wp_enqueue_style('ms-global-css', get_template_directory_uri() . '/assets/css/styles.css');
+  wp_enqueue_style('ms-block-styles', get_template_directory_uri() . '/assets/css/blocks.css');
   wp_enqueue_style('ms-simple-scroll-animations', 'https://cdn.jsdelivr.net/gh/Michal-Skoula/simple-scroll-animations@master/release/latest/styles.css');
   wp_enqueue_style('ms-swiperjs-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
 }
@@ -23,23 +24,16 @@ add_action( 'wp_enqueue_scripts', 'ms_register_scripts');
 
 /**
  * Initialization of all ACF blocks
- *
- * @link https://developer.wordpress.org/reference/hooks/init/
  */
 function ms_register_acf_blocks() {
 
   register_block_type( __DIR__ . '/blocks/hero' );
 }
-// Here we call our tt3child_register_acf_block() function on init.
 add_action( 'init', 'ms_register_acf_blocks' );
-
-
-
+ 
 /**
  * Outputs the URL of an image located in the /assets/images/ directory.
- *
  * @param string $path Name of the image file in /assets/images
- * @return string
  */
 function image($path) {
   $full_path = esc_url(get_template_directory_uri() . '/assets/images/' . $path);
