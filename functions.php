@@ -36,7 +36,7 @@ add_action( 'init', 'ms_register_acf_blocks' );
  
 /**
  * Outputs the URL of an image located in the /assets/images/ directory.
- * @param string $path Name of the image file in /assets/images
+ * @param string $path Name of the image file in /assets/images/
  */
 function image($path) {
   $full_path = esc_url(get_template_directory_uri() . '/assets/images/' . $path);

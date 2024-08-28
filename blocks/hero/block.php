@@ -19,21 +19,29 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 ?>
 <div id="hero" class="section">
-    <div class="max-content-width">
-      <div class="hero-content row">
-        <div class="text">
-          <h1 class="animate fade-in staggered"><? echo $heading ?></h1>
-          <p class="animate fade-in staggered"> <? echo $description ?></p>
-          <div class="animate fade-in staggered">
-            <a class="button-primary desktop-display-btn" href="<? echo $btn_url ?>"><? echo $btn_text ?></a>
-          </div>
+  <div class="max-content-width">
+    <div class="hero-content row">
+      <div class="text">
+        <h1 class="animate fade-in staggered">
+          <?php echo $heading ?>
+        </h1>
+        <p class="animate fade-in staggered">
+          <?php echo $description ?>
+        </p>
+        <div class="animate fade-in staggered">
+          <a class="button-primary desktop-display-btn" href="<? echo $btn_url ?>">
+            <? echo $btn_text ?>
+          </a>
         </div>
-        <div id="hero-img">
-          <img class="animate fade-in delay300 duration200" src=" <? echo $img_url ?>" alt="<? echo $img_alt ?>">
-          <div class="animate bottom-to-top delay100 mobile-display-btn">
-            <a class=" button-primary " href="<? echo $btn_url ?>"> <? echo $btn_text ?></a>
-          </div>
+      </div>
+      <div id="hero-img">
+        <img class="animate fade-in delay300 duration200" src=" <?php echo $img_url ?>" alt="<?php echo $img_alt ?>">
+        <div class="animate bottom-to-top delay100 mobile-display-btn">
+          <a class="button-primary" href="<?php echo $btn_url ?>">
+            <?php echo $btn_text ?>
+          </a>
         </div>
       </div>
     </div>
   </div>
+</div>
