@@ -24,12 +24,11 @@ $testimonials = $reviews_query->get_posts();
       <div class="swiper-wrapper">
         <?php
 if($testimonials) {
-  var_dump($testimonials);
   foreach($testimonials as $testimonial) {
     $postid = $post->ID;
-    $author = get_the_title($postid);
-    $company = get_field('company', $postid);
-    $review_text = get_field('review', $postid);
+    $author = get_the_title();
+    $company = get_field('company');
+    $review_text = get_field('review');
 }
 
 ?>
