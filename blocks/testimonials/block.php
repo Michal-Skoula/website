@@ -14,7 +14,6 @@ $reviews_query = new WP_Query($args);
 
 // Check if any reviews were found
 if($reviews_query->have_posts()) {
-  echo '<div class="testimonials-block">';
   while($reviews_query->have_posts()) {
       $reviews_query->the_post();
       $author = get_field('author');
@@ -22,7 +21,6 @@ if($reviews_query->have_posts()) {
       $review_text = get_field('review_text');
 
       // Output the testimonial
-      echo '<div class="testimonial">';
       echo '<p class="testimonial-text">' . esc_html($review_text) . '</p>';
       echo '<p class="testimonial-author">' . esc_html($author) . '</p>';
       echo '<p class="testimonial-company">' . esc_html($company) . '</p>';
@@ -35,5 +33,4 @@ if($reviews_query->have_posts()) {
 } else {
   // No reviews found
   echo '<p>No testimonials found.</p>';
-}
 }
