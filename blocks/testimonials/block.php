@@ -25,11 +25,18 @@ $reviews_query = new WP_Query($args);
         if($reviews_query->have_posts()) {
           while($reviews_query->have_posts()) {
               $reviews_query->the_post();
-              
               $author = get_field('author');
               $company = get_field('company');
               $review_text = get_field('review_text');
+
+              echo $reviews_query->the_post();
+              echo $author;
           ?>
+
+
+
+
+
         <div class="swiper-slide testimonial animate staggered left-to-right noblur">
           <p> <?php echo $review_text ?></p>
           <div class="author">
@@ -40,6 +47,10 @@ $reviews_query = new WP_Query($args);
         <?php
           }
         }
+        else {
+          echo '<p>No content found.</p>';
+        }
+        wp_reset_postdata();
         ?>
       </div>
       <!-- End Repeater field -->
