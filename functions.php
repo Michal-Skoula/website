@@ -15,10 +15,10 @@ function ms_register_styles () {
 add_action( 'wp_enqueue_scripts', 'ms_register_styles');
 
 function ms_register_scripts () {
-  wp_enqueue_script('ms-website-scripts', get_template_directory_uri() . '/assets/js/script.js', array(), '', array( 'strategy' => 'defer' ));
   wp_enqueue_script('ms-swiperjs', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), '', array( 'strategy' => 'defer' ));
   wp_enqueue_script('ms-simple-scroll-animations', 'https://cdn.jsdelivr.net/gh/Michal-Skoula/simple-scroll-animations@master/release/latest/script.js', array(), '', array( 'strategy' => 'defer' ));
- 
+  wp_enqueue_script('ms-website-scripts', get_template_directory_uri() . '/assets/js/script.js', array(), '', array( 'strategy' => 'defer' ));
+
 }
 add_action( 'wp_enqueue_scripts', 'ms_register_scripts');
 
