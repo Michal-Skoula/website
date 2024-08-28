@@ -28,6 +28,9 @@ add_action( 'wp_enqueue_scripts', 'ms_register_scripts');
 function ms_register_acf_blocks() {
 
   register_block_type( __DIR__ . '/blocks/hero' );
+  register_block_type( __DIR__ . '/blocks/highlightstart' );
+  register_block_type( __DIR__ . '/blocks/highlightend' );
+
 }
 add_action( 'init', 'ms_register_acf_blocks' );
  
@@ -39,4 +42,3 @@ function image($path) {
   $full_path = esc_url(get_template_directory_uri() . '/assets/images/' . $path);
   return $full_path;
 }
-

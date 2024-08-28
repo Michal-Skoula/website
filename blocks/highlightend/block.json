@@ -1,10 +1,11 @@
 {
-  "name": "ms/hero",
-  "title": "Hero Section",
-  "description": "Hero section with left side h1, p, button, right side img",
+  "name": "ms/highlightend",
+  "title": "Highlight end section",
+  "description": "2/2 blue highlight component",
+  "style": [ "file:./block.css" ],
   "category": "component",
   "icon": "admin-comments",
-  "keywords": ["hero"],
+  "keywords": ["",""],
   "acf": {
       "mode": "preview",
       "renderTemplate": "block.php"

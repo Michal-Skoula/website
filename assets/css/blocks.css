@@ -1,23 +1,18 @@
 /* Section */
 
 .section-highlight {
-  margin:0 auto;
-  /* margin-bottom:130px; */
   background: var(--clr-primary-gradient);
-  /* padding-bottom: var(--s700); */
   position: relative;
+  width: 100vw !important;
+  max-width: 100% !important;
 }
 .section-highlight + .divider-left {
   margin-top: calc(var(--px1) * -1);
-  margin-bottom: var(--content-padding-y)
+  margin-bottom: var(--content-padding-y);
 }
 .section-highlight > .section:first-of-type > .max-content-width {
   /* Adds top padding to the first element in a highlighted section */
   padding-top: var(--content-padding-y);
-}
-body > *:not(.section):has( + .section) {
-  /* For all native WP blocks to have unified spacing */
-  margin-top: var(--content-padding-y);
 }
 
 /* Contact */
@@ -30,7 +25,7 @@ body > *:not(.section):has( + .section) {
   background-image: url(../assets/vector_cta.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
 }
 @media screen and (max-width: 60rem) {
   #contact .booking-window {
@@ -49,7 +44,7 @@ body > *:not(.section):has( + .section) {
 /* FAQ */
 
 #faq > .max-content-width {
-  gap:var(--s600);
+  gap: var(--s600);
   display: grid;
   grid-template-columns: 4fr 5fr;
 }
@@ -78,13 +73,13 @@ body > *:not(.section):has( + .section) {
 }
 .faq-card p {
   max-width: 90%;
-  padding-top:0;
+  padding-top: 0;
 }
 .faq-card > label::after {
   content: url(../assets/ico-plus.svg);
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   height: var(--h3);
   width: var(--h3);
   transform: rotate(0);
@@ -99,7 +94,7 @@ body > *:not(.section):has( + .section) {
   pointer-events: all;
   opacity: 1;
   height: 100%;
-} 
+}
 .faq-card:has(input:checked) > label::after {
   transform: rotate(45deg);
 }
@@ -123,7 +118,6 @@ span.ico-mail a {
 span.ico-phone:hover a,
 span.ico-mail:hover a {
   color: var(--clr-white);
-
 }
 span.ico-phone:hover,
 span.ico-mail:hover {
@@ -137,16 +131,16 @@ span.ico-mail::before {
   margin-right: calc(var(--s200) / 3);
 }
 span.ico-mail::before {
-  content:url(../assets/ico-mail.svg);
+  content: url(../assets/ico-mail.svg);
 }
 span.ico-phone::before {
-  content:url(../assets/ico-phone.svg);
+  content: url(../assets/ico-phone.svg);
 }
 
-@media screen and (max-width:60rem) {
+@media screen and (max-width: 60rem) {
   #faq > .max-content-width {
     grid-template-columns: 1fr;
-    gap:var(--s700);
+    gap: var(--s700);
   }
   #faq h3 {
     padding-right: var(--s700);
@@ -166,14 +160,14 @@ span.ico-phone::before {
 #hero .max-content-width::before {
   content: url(../assets/particles.svg);
   width: 1100px;
-  position:absolute;
-  top:-400px;
-  right:0px;
+  position: absolute;
+  top: -400px;
+  right: 0px;
   z-index: -1;
 }
 .hero-content {
   display: flex;
-  margin-top:var(--s700);
+  margin-top: var(--s700);
   justify-content: space-between;
 }
 .hero-content .text {
@@ -188,23 +182,28 @@ span.ico-phone::before {
   margin-top: var(--s600);
 }
 #hero-img {
-  height:100%;
+  height: 100%;
 }
 #hero-img > img {
   /* position: absolute; */
   max-width: 28rem;
-  right:0;
+  right: 0;
   z-index: 0;
 }
 /* Hides transition between bg and image, gradient */
 #hero-img::before {
-  content:'';
+  content: "";
   position: absolute;
-  background: linear-gradient(180deg, rgba(120, 18, 18, 0) 0%, rgba(20, 22, 27, 90%) 23%, var(--clr-bg) 80%);
+  background: linear-gradient(
+    180deg,
+    rgba(120, 18, 18, 0) 0%,
+    rgba(20, 22, 27, 90%) 23%,
+    var(--clr-bg) 80%
+  );
   width: 100%;
-  height:50%;
+  height: 50%;
   z-index: 100;
-  bottom:calc(var(--s900) * -1);
+  bottom: calc(var(--s900) * -1);
 }
 .mobile-display-btn {
   position: relative;
@@ -228,8 +227,8 @@ span.ico-phone::before {
   #hero-img::before {
     width: 100vw;
     height: 10%;
-    bottom:var(--content-padding-y);
-    left:0;
+    bottom: var(--content-padding-y);
+    left: 0;
   }
 }
 @media screen and (max-width: 30rem) {
@@ -243,7 +242,7 @@ span.ico-phone::before {
     width: 100%;
   }
   #hero-img::before {
-    bottom:10%;
+    bottom: 10%;
   }
   .desktop-display-btn {
     display: none;
@@ -253,10 +252,10 @@ span.ico-phone::before {
   }
   .hero-content .button-primary {
     margin-top: 0;
-    margin-bottom: var(--s600)
+    margin-bottom: var(--s600);
   }
   #hero-img::before {
-    bottom:var(--s900);
+    bottom: var(--s900);
   }
 }
 
@@ -270,7 +269,7 @@ span.ico-phone::before {
   display: inline-block;
 }
 #projects-showcase .projects-heading a span {
-  padding:0;
+  padding: 0;
   transition: padding 150ms;
 }
 #projects-showcase .projects-heading a:hover span {
@@ -279,10 +278,10 @@ span.ico-phone::before {
 #projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:var(--s500);
+  gap: var(--s500);
 }
-#projects-grid h3, 
-#projects-grid p, 
+#projects-grid h3,
+#projects-grid p,
 #projects-grid a {
   color: var(--clr-black);
   text-decoration: none;
@@ -291,67 +290,64 @@ span.ico-phone::before {
 #projects-grid h3 {
   font-weight: 500;
   font-size: 1.8rem;
-  margin-bottom: var(--s200)
+  margin-bottom: var(--s200);
 }
 #projects-grid .project {
   position: relative;
 }
 #projects-grid .project > a {
   /* This is the real container, not the <article> */
-  background-color: #F8BF6A;
+  background-color: #f8bf6a;
   padding: var(--s600);
   display: block;
   aspect-ratio: 1/1;
   translate: background-color 150ms;
 }
-#projects-grid .project a:hover, 
+#projects-grid .project a:hover,
 #projects-grid .project a:active {
   background-color: #f9b857;
 }
 .project img {
   position: absolute;
-  bottom:0;
-  right:0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   z-index: 0;
 }
 .project::after {
-  content:url(../assets/arrow-right.svg);
+  content: url(../assets/arrow-right.svg);
   position: absolute;
-  top:var(--s600);
-  right:var(--s600);
+  top: var(--s600);
+  right: var(--s600);
   width: 6%;
   aspect-ratio: 1/1;
-  transform: translateX(-40%) scale(1.0);
+  transform: translateX(-40%) scale(1);
   opacity: 0;
   transition: transform 150ms, opacity 150ms;
 }
 .project:hover::after {
   transform: translateX(0) scale(1.2);
-  opacity: 1;  
+  opacity: 1;
 }
 .iphone.iphone {
   bottom: -10%;
-  right:-7%;
+  right: -7%;
   transition: transform 250ms;
 }
 .iphone.iphone:hover {
   transform: scale(1.1);
 }
 .ipad.ipad {
-
 }
 .macbook.macbook {
-
 }
 .imac.imac {
-
 }
 
 @media screen and (max-width: 50rem) {
   .projects-heading {
     flex-direction: column;
-    gap:var(--s200);
+    gap: var(--s200);
   }
 }
 @media screen and (max-width: 43rem) {
@@ -376,13 +372,13 @@ span.ico-phone::before {
   margin-top: var(--s300);
 }
 .testimonial::before {
-  content:url(../assets/quote-right.svg);
+  content: url(../assets/quote-right.svg);
 }
 .swiper-wrapper {
   margin-bottom: 64px;
 }
 .swiper-pagination-bullet {
-  background-color:white !important;
+  background-color: white !important;
 }
 #testimonials .author {
   text-align: end;

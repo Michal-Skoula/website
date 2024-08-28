@@ -1,10 +1,11 @@
 {
-  "name": "ms/hero",
-  "title": "Hero Section",
-  "description": "Hero section with left side h1, p, button, right side img",
+  "name": "ms/block",
+  "title": "block",
+  "description": "desc",
+  "style": [ "file:./style.css" ],
   "category": "component",
   "icon": "admin-comments",
-  "keywords": ["hero"],
+  "keywords": ["",""],
   "acf": {
       "mode": "preview",
       "renderTemplate": "block.php"
