@@ -17,7 +17,7 @@
       <li><a class="js-close-menu" href="#contact">Kontakt</a></li>
       <li class="menu">
         <label class="btn-menu-hero" for="btn-menu-hero" aria-controls="main-menu" aria-expanded="false">
-          <img src="<? echo image('ico-close.svg') ?>" alt="X Close icon">
+          <img src="<?php echo image('ico-close.svg') ?>" alt="X Close icon">
         </label>
       </li>
     </ul>
@@ -25,7 +25,7 @@
   <div id="nav" class="section">
     <div class="max-content-width">
       <header class="row space-between align-center">
-        <a class="nav-logo" href="/"><img class="" src="<? echo image('logo-light.svg') ?>"
+        <a class="nav-logo" href="/"><img class="" src="<?php echo image('logo-light.svg') ?>"
             alt="Logo Michal Škoula"></a>
         <nav class="">
           <ul class="row">
@@ -36,7 +36,7 @@
             <!-- <li><a class="button-primary" href="#">Rezervovat schůzku</a></li> -->
             <li class="menu">
               <label class="btn-menu-hero" for="btn-menu-hero" aria-controls="main-menu" aria-expanded="false">
-                <img src=" <? echo image('ico-hamburger.svg') ?>" alt="Open menu">
+                <img src=" <?php echo image('ico-hamburger.svg') ?>" alt="Open menu">
               </label>
             </li>
           </ul>
