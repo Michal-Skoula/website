@@ -41,6 +41,7 @@ if($testimonials):
         </div>
         <?php
 endforeach;
+wp_reset_postdata();
 
 else:
   echo '<p>No testimonials found.</p>';
