@@ -10,7 +10,7 @@ $testimonial_count = esc_attr(get_field('testimonial_count'));
 $args = array(
   'post_type' => 'reviews',
   'posts_per_page' => $testimonial_count, // Get all posts
-  'order' => 'ASC'
+  // 'order' => 'ASC'
 );
 $reviews_query = new WP_Query($args);
 
@@ -24,6 +24,7 @@ $testimonials = $reviews_query->get_posts();
       <div class="swiper-wrapper">
         <?php
 if($testimonials) {
+  var_dump($testimonials);
   foreach($testimonials as $testimonial) {
     $postid = $post->ID;
     $author = get_the_title($postid);
