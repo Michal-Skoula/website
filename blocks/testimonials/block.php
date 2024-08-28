@@ -23,16 +23,14 @@ $testimonials = $reviews_query->get_posts();
       <h2 class="animate fade-in"> <?php echo $heading ?></h2>
       <div class="swiper-wrapper">
         <?php
-if($testimonials) {
-  foreach($testimonials as $testimonial) {
+if($testimonials):
+  foreach($testimonials as $testimonial):
     setup_postdata($testimonial);
-    var_dump($testimonial);
-    $postid = $post->ID;
-    $author = get_the_title();
-    $company = get_field('company');
-    $review_text = get_field('review');
-}
-
+    // var_dump($testimonial);
+    $id = $testimonial->ID;
+    $author = get_the_title($id);
+    $company = get_field('company', $id);
+    $review_text = get_field('review', $id);
 ?>
         <div class="swiper-slide testimonial animate staggered left-to-right noblur">
           <p> <?php echo $review_text?></p>
@@ -42,10 +40,12 @@ if($testimonials) {
           </div>
         </div>
         <?php
-} 
-else {
+endforeach;
+
+else:
   echo '<p>No testimonials found.</p>';
-}
+
+endif;
 ?>
       </div>
       <div class="swiper-pagination"></div>
