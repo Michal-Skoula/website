@@ -1,14 +1,15 @@
 <?php
 /**
- * Testimonials block which recursively displays all testimonials under the 
- * "Testimonials" custom post type.
+ * Testimonials block which recursively displays all testimonials 
+ * under the "testimonials" custom post type.
  */
+
 $heading = esc_attr(get_field('heading'));
 $testimonial_count = esc_attr(get_field('testimonial_count'));
 
 $args = array(
-  'post_type' => 'reviews',
-  'posts_per_page' => -1, // Get all posts
+  'post_type' => 'review',
+  // 'posts_per_page' => -1, // Get all posts
 );
 $reviews_query = new WP_Query($args);
 
