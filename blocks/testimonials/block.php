@@ -9,12 +9,11 @@ $testimonial_count = esc_attr(get_field('testimonial_count'));
 
 $args = array(
   'post_type' => 'reviews',
-  'posts_per_page' => $testimonial_count, // Get all posts
+  'posts_per_page' => $testimonial_count, 
   // 'order' => 'ASC'
 );
-$reviews_query = new WP_Query($args);
-
-$testimonials = $reviews_query->get_posts();
+$query = new WP_Query($args);
+$testimonials = $query->get_posts();
 ?>
 
 <div id="testimonials" class="section">
