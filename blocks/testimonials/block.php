@@ -25,6 +25,7 @@ $testimonials = $reviews_query->get_posts();
         <?php
 if($testimonials) {
   foreach($testimonials as $testimonial) {
+    var_dump($testimonial);
     $postid = $post->ID;
     $author = get_the_title();
     $company = get_field('company');
