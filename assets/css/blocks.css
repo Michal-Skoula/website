@@ -372,7 +372,7 @@ span.ico-phone::before {
   margin-top: var(--s300);
 }
 .testimonial::before {
-  content: url(../assets/quote-right.svg);
+  content: url(../images/quote-right.svg);
 }
 .swiper-wrapper {
   margin-bottom: 64px;
