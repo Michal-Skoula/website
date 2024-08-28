@@ -9,29 +9,42 @@ $testimonial_count = esc_attr(get_field('testimonial_count'));
 
 $args = array(
   'post_type' => 'reviews',
-  'posts_per_page' => -1, // Get all posts
+  'posts_per_page' => $testimonial_count, // Get all posts
+  'order' => 'ASC'
 );
 $reviews_query = new WP_Query($args);
 
-// Check if any reviews were found
-if($reviews_query->have_posts()) {
-  while($reviews_query->have_posts()) {
-      $reviews_query->the_post();
-      $author = get_field('author');
-      $company = get_field('company');
-      $review_text = get_field('review_text');
+$testimonials = $reviews_query->get_posts();
+?>
 
-      // Output the testimonial
-      echo '<p class="testimonial-text">' . esc_html($review_text) . '</p>';
-      echo '<p class="testimonial-author">' . esc_html($author) . '</p>';
-      echo '<p class="testimonial-company">' . esc_html($company) . '</p>';
-      echo '</div>';
-  }
-  echo '</div>';
+<div id="testimonials" class="section">
+  <div class="max-content-width">
+    <div class="swiper testimonialSwiper">
+      <h2 class="animate fade-in"> <?php echo $heading ?></h2>
+      <div class="swiper-wrapper">
+        <?php
+if($testimonials) {
+  foreach($testimonials as $testimonial) {
+    $author = the_title();
+    $company = get_field('company');
+    $review_text = get_field('review');
+}
 
-  // Restore original Post Data
-  wp_reset_postdata();
-} else {
-  // No reviews found
+?>
+        <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+          <p> <?php echo $review_text?></p>
+          <div class="author">
+            <p class="strong"> <?php echo $author ?></p>
+            <p> <?php echo $company ?></p>
+          </div>
+        </div>
+        <?php
+} 
+else {
   echo '<p>No testimonials found.</p>';
 }
+?>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
