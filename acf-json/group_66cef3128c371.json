@@ -1,9 +1,9 @@
 {
-    "key": "group_66c9b8a4ac919",
+    "key": "group_66cef3128c371",
     "title": "Hero",
     "fields": [
         {
-            "key": "field_66c9b8a5279fb",
+            "key": "field_66cef313914e4",
             "label": "Heading",
             "name": "heading",
             "aria-label": "",
@@ -23,11 +23,11 @@
             "append": ""
         },
         {
-            "key": "field_66c9b985279fc",
+            "key": "field_66cef374914e5",
             "label": "Description",
             "name": "description",
             "aria-label": "",
-            "type": "textarea",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,14 +36,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Pomůžu vám prezentovat se a vydělávat online pomocí špičkovému webu na míru. S důrazem na skvělý design a maximální přínos pro vás.",
+            "default_value": "Pomáhám společnostem a podnikatelům prezentovat se online díky perfektním a efektivním webům na míru.",
             "maxlength": "",
-            "rows": "",
             "placeholder": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": ""
         },
         {
-            "key": "field_66c9ba0b279fd",
+            "key": "field_66cef385914e6",
             "label": "Button text",
             "name": "button_text",
             "aria-label": "",
@@ -63,7 +63,7 @@
             "append": ""
         },
         {
-            "key": "field_66c9ba23279fe",
+            "key": "field_66cef3b6914e7",
             "label": "Button URL",
             "name": "button_url",
             "aria-label": "",
@@ -83,7 +83,7 @@
             "append": ""
         },
         {
-            "key": "field_66c9ba3a279ff",
+            "key": "field_66cef3d4914e8",
             "label": "Hero image",
             "name": "hero_image",
             "aria-label": "",
@@ -126,5 +126,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1724499149
+    "modified": 1724838901
 }

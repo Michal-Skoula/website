@@ -1,0 +1,65 @@
+{
+    "key": "group_66cf0f47d2e50",
+    "title": "Review fields",
+    "fields": [
+        {
+            "key": "field_66cf0f481b7e7",
+            "label": "Company",
+            "name": "company",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66cf0f5e1b7e8",
+            "label": "Review",
+            "name": "review",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Webová SSH konzole umožňuje přístup na SSH konzoli pomocí internetového prohlížeče. Můžete tak pracovat s daty v prostoru vašeho hostingu, používat Composer, Git, spouštět vlastní skripty, atd.",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "reviews"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1724845965
+}
