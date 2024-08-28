@@ -29,8 +29,8 @@ if ( ! empty( $block['anchor'] ) ) {
           <?php echo $description ?>
         </p>
         <div class="animate fade-in staggered">
-          <a class="button-primary desktop-display-btn" href="<? echo $btn_url ?>">
-            <? echo $btn_text ?>
+          <a class="button-primary desktop-display-btn" href="<?php echo $btn_url ?>">
+            <?php echo $btn_text ?>
           </a>
         </div>
       </div>
