@@ -3,42 +3,44 @@
  * Testimonials block which recursively displays all testimonials under the 
  * "Testimonials" custom post type.
  */
+$heading = esc_attr(get_field('heading'));
+$testimonial_count = esc_attr(get_field('testimonial_count'));
 
 $args = array(
   'post_type' => 'reviews',
-  'posts_per_page' => -1, // Get all posts
+  'posts_per_page' => $testimonial_count,
+  'orderby' => 'date',
+  'order' => 'ASC'
 );
 $reviews_query = new WP_Query($args);
-
-echo '<pre>';
-var_dump($reviews_query);
-echo '</pre>';
-
-// Check if any reviews were found
-// if($reviews_query->have_posts()) {
-//   echo '<div class="testimonials-block">';
-//   while($reviews_query->have_posts()) {
-//       $reviews_query->the_post();
-//       $author = get_field('author');
-//       $company = get_field('company');
-//       $review_text = get_field('review_text');
-
 ?>
 
 <div id="testimonials" class="section">
   <div class="max-content-width">
     <div class="swiper testimonialSwiper">
-      <h2 class="animate fade-in">Názory mých klientů</h2>
+      <h2 class="animate fade-in"> <?php echo $heading ?></h2>
       <!-- Repeater field -->
       <div class="swiper-wrapper">
+        <?php
+        if($reviews_query->have_posts()) {
+          while($reviews_query->have_posts()) {
+              $reviews_query->the_post();
+              
+              $author = get_field('author');
+              $company = get_field('company');
+              $review_text = get_field('review_text');
+          ?>
         <div class="swiper-slide testimonial animate staggered left-to-right noblur">
-          <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě
-            webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+          <p> <?php echo $review_text ?></p>
           <div class="author">
-            <p class="strong">Bc. Pavel Zahradník</p>
-            <p>Forza Juniors</p>
+            <p class="strong"><?php echo $author ?></p>
+            <p> <?php echo ($company) ? $company : '' ?></p>
           </div>
         </div>
+        <?php
+          }
+        }
+        ?>
       </div>
       <!-- End Repeater field -->
       <div class="swiper-pagination"></div>
