@@ -181,9 +181,9 @@ button:active,
 }
 body > *:not(.section):not(.divider):not(.section-highlight):not(#wpadminbar),
 .section-highlight > *:not(.section):not(.section-highlight) {
-  max-width: var(--max-content-width);
+  /* max-width: var(--max-content-width);
   padding: 0 var(--content-padding-x);
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 body > *:not(.section):not(.divider) + .section {
   padding-bottom: var(--content-padding-y);

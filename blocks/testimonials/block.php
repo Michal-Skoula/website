@@ -31,10 +31,10 @@ if($testimonials):
     $company = get_field('company', $id);
     $review_text = get_field('review', $id);
 ?>
-        <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+        <div class="swiper-slide testimonial">
           <p> <?php echo $review_text?></p>
           <div class="author">
-            <p class="strong"> <?php echo $author ?></p>
+            <b class="strong"> <?php echo $author ?></b>
             <p> <?php echo $company ?></p>
           </div>
         </div>

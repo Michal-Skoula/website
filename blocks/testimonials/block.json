@@ -2,7 +2,6 @@
   "name": "ms/testimnials",
   "title": "Testimonials",
   "description": "Display testimonials",
-  "style": ["file:./style.css"],
   "category": "component",
   "icon": "admin-comments",
   "keywords": ["testimonial", "testimonials"],
