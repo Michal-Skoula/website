@@ -31,6 +31,7 @@ function ms_register_acf_blocks() {
   register_block_type( __DIR__ . '/blocks/highlightstart' );
   register_block_type( __DIR__ . '/blocks/highlightend' );
   register_block_type( __DIR__ . '/blocks/testimonials' );
+  register_block_type( __DIR__ . '/blocks/faq' );
 
 }
 add_action( 'init', 'ms_register_acf_blocks' );

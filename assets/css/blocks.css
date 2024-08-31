@@ -22,7 +22,7 @@
 }
 #contact .booking-window {
   position: relative;
-  background-image: url(../assets/vector_cta.svg);
+  background-image: url(../images/vector_cta.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -76,12 +76,12 @@
   padding-top: 0;
 }
 .faq-card > label::after {
-  content: url(../assets/ico-plus.svg);
+  content: url(../images/ico-plus.svg);
   position: absolute;
   top: 0;
   right: 0;
-  height: var(--h3);
-  width: var(--h3);
+  height: 90%;
+  aspect-ratio: 1/1;
   transform: rotate(0);
   transition: transform 300ms;
 }
@@ -109,32 +109,33 @@
 #faq span {
   display: inline-block;
 }
-span.ico-phone a,
-span.ico-mail a {
+#faq a.ico-phone,
+#faq a.ico-mail {
   color: var(--clr-white);
   text-decoration: none;
   cursor: pointer;
+  display: inline-block;
 }
-span.ico-phone:hover a,
-span.ico-mail:hover a {
+#faq a.ico-phone:hover,
+#faq a.ico-mail:hover {
   color: var(--clr-white);
 }
-span.ico-phone:hover,
-span.ico-mail:hover {
+#faq a.ico-phone:hover,
+#faq a.ico-mail:hover {
   text-decoration: underline;
 }
-span.ico-phone::before,
-span.ico-mail::before {
+#faq a.ico-phone::before,
+#faq a.ico-mail::before {
   height: 0.813rem;
   width: 0.813rem;
   display: inline-block;
   margin-right: calc(var(--s200) / 3);
 }
-span.ico-mail::before {
-  content: url(../assets/ico-mail.svg);
+#faq a.ico-mail::before {
+  content: url(../images/ico-mail.svg);
 }
-span.ico-phone::before {
-  content: url(../assets/ico-phone.svg);
+#faq a.ico-phone::before {
+  content: url(../images/ico-phone.svg);
 }
 
 @media screen and (max-width: 60rem) {
@@ -315,7 +316,7 @@ span.ico-phone::before {
   z-index: 0;
 }
 .project::after {
-  content: url(../assets/arrow-right.svg);
+  content: url(../images/arrow-right.svg);
   position: absolute;
   top: var(--s600);
   right: var(--s600);
@@ -336,12 +337,6 @@ span.ico-phone::before {
 }
 .iphone.iphone:hover {
   transform: scale(1.1);
-}
-.ipad.ipad {
-}
-.macbook.macbook {
-}
-.imac.imac {
 }
 
 @media screen and (max-width: 50rem) {
@@ -389,8 +384,6 @@ span.ico-phone::before {
 #testimonials .author p:first-child {
   font-weight: 600;
 }
-.testimonial b {
+.testimonial b:not(.strong) {
   color: var(--clr-primary);
-  font-weight: bold;
-  text-decoration: underline;
 }

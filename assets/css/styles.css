@@ -188,7 +188,7 @@ body > *:not(.section):not(.divider):not(.section-highlight):not(#wpadminbar),
 body > *:not(.section):not(.divider) + .section {
   padding-bottom: var(--content-padding-y);
 }
-body > *:not(.section):not(.section-highlight):has(+ .section) {
+body > *:not(.divider):not(.section):not(.section-highlight):has(+ .section) {
   /* For all native WP blocks to have unified spacing with my custom ones */
   margin-top: var(--content-padding-y);
 }

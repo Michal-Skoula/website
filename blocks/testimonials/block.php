@@ -10,7 +10,7 @@ $testimonial_count = esc_attr(get_field('testimonial_count'));
 $args = array(
   'post_type' => 'reviews',
   'posts_per_page' => $testimonial_count, 
-  // 'order' => 'ASC'
+  'order' => 'ASC'
 );
 $query = new WP_Query($args);
 $testimonials = $query->get_posts();
@@ -51,3 +51,4 @@ endif;
       <div class="swiper-pagination"></div>
     </div>
   </div>
+</div>

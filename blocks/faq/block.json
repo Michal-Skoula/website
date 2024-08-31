@@ -1,0 +1,16 @@
+{
+  "name": "ms/faq",
+  "title": "Frequently asked questions block",
+  "description": "Lets you add questions and answers",
+  "style": ["file:./style.css"],
+  "category": "component",
+  "icon": "admin-comments",
+  "keywords": ["", ""],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "block.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}
