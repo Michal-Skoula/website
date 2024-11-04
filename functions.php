@@ -32,6 +32,9 @@ function ms_register_acf_blocks() {
   register_block_type( __DIR__ . '/blocks/highlightend' );
   register_block_type( __DIR__ . '/blocks/testimonials' );
   register_block_type( __DIR__ . '/blocks/faq' );
+  register_block_type( __DIR__ . '/blocks/contact');
+  register_block_type( __DIR__ . '/blocks/projects');
+
 
 }
 add_action( 'init', 'ms_register_acf_blocks' );

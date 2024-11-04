@@ -1,10 +1,11 @@
 {
-  "name": "ms/hero",
-  "title": "Hero block",
-  "description": "Hero section with left side h1, p, button, right side img",
+  "name": "ms/contact",
+  "title": "Contact Block",
+  "description": "Contact form & booking link",
+  "style": ["file:./style.css"],
   "category": "component",
   "icon": "admin-comments",
-  "keywords": ["hero"],
+  "keywords": ["", ""],
   "acf": {
     "mode": "preview",
     "renderTemplate": "block.php"

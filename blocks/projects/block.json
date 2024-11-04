@@ -1,0 +1,16 @@
+{
+  "name": "ms/projects",
+  "title": "Projects display",
+  "description": "Displays projects",
+  "style": [ "file:./style.css" ],
+  "category": "component",
+  "icon": "admin-comments",
+  "keywords": ["",""],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "block.php"
+  },
+  "supports": {
+      "anchor": true
+  }
+}

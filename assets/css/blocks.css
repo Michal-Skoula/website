@@ -20,12 +20,35 @@
 #contact {
   text-align: center;
 }
+#contact p {
+  max-width: 30rem;
+  margin:0 auto;
+}
 #contact .booking-window {
-  position: relative;
-  background-image: url(../images/vector_cta.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  margin-top:var(--s600);
+  margin-bottom:var(--s700);
+  /*padding: var(--s800);*/
+  /*position: relative;*/
+  /*background-image: url(../images/vector_cta.svg);*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: 70%;*/
+}
+#contact .booking-window .booking-link {
+
+  font-size: var(--h3);
+  text-decoration: none;
+
+}
+#contact .booking-window .booking-link::after {
+  content: '\2192';
+  font-weight: bold;
+  font-size:var(--h2);
+  padding-left:0;
+  transition: padding-left 150ms;
+}
+#contact .booking-window .booking-link:hover::after {
+  padding-left: var(--s300);
 }
 @media screen and (max-width: 60rem) {
   #contact .booking-window {
@@ -37,7 +60,7 @@
 }
 @media screen and (max-width: 42.5rem) {
   #contact .booking-window {
-    padding-top: var(--s700);
+    padding-top: var(--s500);
   }
 }
 
@@ -198,13 +221,14 @@
   background: linear-gradient(
     180deg,
     rgba(120, 18, 18, 0) 0%,
-    rgba(20, 22, 27, 90%) 23%,
-    var(--clr-bg) 80%
+    rgba(20, 22, 27, 90%) 50%,
+    var(--clr-bg) 70%
   );
+  /* background: rgba(255, 0, 0, 0.35); */
   width: 100%;
-  height: 50%;
+  height: 20%;
   z-index: 100;
-  bottom: calc(var(--s900) * -1);
+  bottom: var(--s900);
 }
 .mobile-display-btn {
   position: relative;
@@ -298,15 +322,15 @@
 }
 #projects-grid .project > a {
   /* This is the real container, not the <article> */
-  background-color: #f8bf6a;
+  /*background-color: #f8bf6a;*/
   padding: var(--s600);
   display: block;
   aspect-ratio: 1/1;
   translate: background-color 150ms;
 }
-#projects-grid .project a:hover,
-#projects-grid .project a:active {
-  background-color: #f9b857;
+#projects-grid .project > a:hover,
+#projects-grid .project > a:active {
+  backdrop-filter: brightness(120%);
 }
 .project img {
   position: absolute;
@@ -336,7 +360,7 @@
   transition: transform 250ms;
 }
 .iphone.iphone:hover {
-  transform: scale(1.1);
+  /*transform: scale(1.1);*/
 }
 
 @media screen and (max-width: 50rem) {
@@ -378,8 +402,8 @@
   background-color: white !important;
 }
 #testimonials .author {
-  text-align: end;
-  margin-top: var(--s300);
+  text-align: start;
+  margin-top: var(--s500);
 }
 #testimonials .author p:first-child {
   font-weight: 600;

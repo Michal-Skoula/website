@@ -78,7 +78,10 @@
 @media screen and (max-width: 30rem) {
   /* Mobile */
   :root {
-    --h1: 1.8rem;
+    /* --h1: 1.8rem;
+    --h2: 1.9rem;
+    --h3: 1.3rem; */
+    --h1: 2.3rem;
     --h2: 1.9rem;
     --h3: 1.3rem;
 
@@ -297,19 +300,13 @@ label.btn-menu-hero img {
   }
   #main-menu .menu {
     position: absolute;
-    top: var(--content-padding);
-    right: var(--content-padding);
+    top: var(--s600);
+    right: var(--content-padding-x);
   }
   #main-menu:has(#btn-menu-hero:checked) {
     pointer-events: all;
     opacity: 1;
     transform: translateX(0);
-  }
-}
-@media screen and (max-width: 30rem) {
-  #main-menu .menu {
-    top: var(--s600);
-    right: var(--s400);
   }
 }
 
