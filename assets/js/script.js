@@ -21,7 +21,7 @@ var swiper = new Swiper(".testimonialSwiper", {
       spaceBetween: 24,
     },
     1000: {
-      slidesPerView: 3,
+      slidesPerView: 2, //TODO: change back to 3 when i have more testimonials
       spaceBetween: 24,
     },
   },

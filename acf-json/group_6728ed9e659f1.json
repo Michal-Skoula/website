@@ -1,9 +1,9 @@
 {
-    "key": "group_66cf045c55fc4",
+    "key": "group_6728ed9e659f1",
     "title": "Testimonials",
     "fields": [
         {
-            "key": "field_66cf045c2ad9a",
+            "key": "field_6728ed9f41bf5",
             "label": "Heading",
             "name": "heading",
             "aria-label": "",
@@ -18,13 +18,14 @@
             },
             "default_value": "Názory mých klientů",
             "maxlength": "",
+            "allow_in_bindings": 0,
             "placeholder": "",
             "prepend": "",
             "append": ""
         },
         {
-            "key": "field_66cf04a64619e",
-            "label": "Testimonial count (-1 for all)",
+            "key": "field_6728edbf41bf6",
+            "label": "Number of testimonials (-1 for all)",
             "name": "testimonial_count",
             "aria-label": "",
             "type": "number",
@@ -39,6 +40,7 @@
             "default_value": -1,
             "min": "",
             "max": "",
+            "allow_in_bindings": 0,
             "placeholder": "",
             "step": "",
             "prepend": "",
@@ -50,7 +52,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "ms\/testimnials"
+                "value": "ms\/testimonials"
             }
         ]
     ],
@@ -63,5 +65,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1724843205
+    "modified": 1730735597
 }

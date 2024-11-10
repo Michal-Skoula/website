@@ -14,24 +14,24 @@
     </div>
     <div class="animate main-body row space-between">
       <div class="cta column">
-        <h3>Tvořím špičkové weby na míru vašim potřebám.</h3>
-        <a class="button-primary" href="#contact">Rezervace schůzky</a>
+          <h3>Tvořím <b>špičkové weby</b> na míru vašim potřebám.</h3>
+        <a class="button-primary" href="#contact">Rezervovat schůzku</a>
       </div>
       <div class="links row space-between">
-        <div class="link column">
-          <b>Rozcestník</b>
-          <a href="#">Mapa webu</a>
-          <a href="#faq">Časté dotazy</a>
-          <a href="#projects">Projekty</a>
-          <a href="#">O mně</a>
-          <a href="#">O spolupráci</a>
-        </div>
-        <div class="link column">
-          <b>Dokumenty</b>
-          <a href="#">Zásady Cookies</a>
-          <a href="#">Zásady GDPR</a>
-          <a href="#">Ochrana osobních údajů</a>
-        </div>
+<!--        <div class="link column">-->
+<!--          <b>Rozcestník</b>-->
+<!--          <a href="#">Mapa webu</a>-->
+<!--          <a href="#faq">Časté dotazy</a>-->
+<!--          <a href="#projects">Projekty</a>-->
+<!--          <a href="#">O mně</a>-->
+<!--          <a href="#">O spolupráci</a>-->
+<!--        </div>-->
+<!--        <div class="link column">-->
+<!--          <b>Dokumenty</b>-->
+<!--          <a href="#">Zásady Cookies</a>-->
+<!--          <a href="#">Zásady GDPR</a>-->
+<!--          <a href="#">Ochrana osobních údajů</a>-->
+<!--        </div>-->
         <div class="link column">
           <b>Kontakt</b>
           <a target="_blank" rel="nofollow" class="ico-phone" href="tel:+420704502951">+420 704 502 951</a>
@@ -43,10 +43,9 @@
 
     </div>
     <div class="copyright row space-between">
-      <p>© Michal Škoula, 2024.</p>
+      <p>&copy; Michal Škoula, <?= date('Y', time())?>.</p>
       <div class="row">
-        <p>IČ: 3434343</p>
-        <p>Jsem plátce DPH.</p>
+<!--        <p>IČ: TODO</p>-->
       </div>
     </div>
   </div>

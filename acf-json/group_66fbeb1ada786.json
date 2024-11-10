@@ -28,6 +28,27 @@
             "label": "Description",
             "name": "description",
             "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_66fbeb85e9e72",
+            "label": "Contact Form",
+            "name": "contact_form",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -37,30 +58,12 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Rád vám pomůžu posunout vaši online prezentaci o level výš.<br> První schůzka je zcela nezávazná a zdarma.",
+            "default_value": "",
             "maxlength": "",
-            "allow_in_bindings": 0,
+            "allow_in_bindings": 1,
             "placeholder": "",
             "prepend": "",
             "append": ""
-        },
-        {
-            "key": "field_66fbeb85e9e72",
-            "label": "Contact Form URL",
-            "name": "contact_form_url",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "https:\/\/calendly.com\/michalskoula\/meeting",
-            "allow_in_bindings": 0,
-            "placeholder": ""
         }
     ],
     "location": [
@@ -81,5 +84,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1727785913
+    "modified": 1731195390
 }

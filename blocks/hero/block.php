@@ -4,14 +4,14 @@
  * 
  */
 
-$heading = esc_attr(get_field('heading'));
+$heading = get_field('heading');
 $description = esc_attr(get_field('description'));
 $btn_text = esc_attr(get_field('button_text'));
 $btn_url = esc_url(get_field('button_url'));
 
 $img_array = get_field('hero_image');
-$img_url = $img_array['url'];
-$img_alt = $img_array['alt'];
+$img_url = $img_array['url'] ?? null;
+$img_alt = $img_array['alt'] ?? null;
 
 $anchor = '';
 if ( ! empty( $block['anchor'] ) ) {

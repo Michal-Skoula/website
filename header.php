@@ -24,7 +24,7 @@
   </nav>
   <div id="nav" class="section">
     <div class="max-content-width">
-      <header class="row space-between align-center">
+      <header class="row space-between align-center animate fade-in">
         <a class="nav-logo" href="/"><img class="" src="<?php echo image('logo-light.svg') ?>"
             alt="Logo Michal Škoula"></a>
         <nav class="">
@@ -33,7 +33,6 @@
             <li><a href="#projects-showcase">Projekty</a></li>
             <li><a href="#">O spolupráci</a></li>
             <li><a href="#contact">Kontakt</a></li>
-            <!-- <li><a class="button-primary" href="#">Rezervovat schůzku</a></li> -->
             <li class="menu">
               <label class="btn-menu-hero" for="btn-menu-hero" aria-controls="main-menu" aria-expanded="false">
                 <img src=" <?php echo image('ico-hamburger.svg') ?>" alt="Open menu">
@@ -43,4 +42,17 @@
         </nav>
       </header>
     </div>
+<!--    <nav id="floating-nav">-->
+<!--        <ul class="row">-->
+<!--            <li><a href="#">O mně</a></li>-->
+<!--            <li><a href="#projects-showcase">Projekty</a></li>-->
+<!--            <li><a href="#">O spolupráci</a></li>-->
+<!--            <li><a href="#contact">Kontakt</a></li>-->
+<!--            <li class="menu">-->
+<!--                <label class="btn-menu-hero" for="btn-menu-hero" aria-controls="main-menu" aria-expanded="false">-->
+<!--                    <img src=" --><?php //echo image('ico-hamburger.svg') ?><!--" alt="Open menu">-->
+<!--                </label>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </nav>-->
   </div>

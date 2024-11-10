@@ -93,7 +93,7 @@
                     "label": "Answer",
                     "name": "answer",
                     "aria-label": "",
-                    "type": "textarea",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -102,12 +102,12 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Předáním webu naše spolupráce nekončí! Pokud budete chtít, budu se o váš web i nadále starat, udržovat ho bezpečnostními aktualizacemi a přidávat funkce, pokud to bude vaše podnikání v budoucnu vyžadovat.",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": "",
+                    "default_value": "",
+                    "allow_in_bindings": 1,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
                     "parent_repeater": "field_66d0b31035ef7"
                 }
             ]
@@ -131,5 +131,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1724953561
+    "modified": 1730842768
 }

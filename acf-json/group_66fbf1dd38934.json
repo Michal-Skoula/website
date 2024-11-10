@@ -45,6 +45,27 @@
             "new_lines": ""
         },
         {
+            "key": "field_6729e135cf26a",
+            "label": "Button_text",
+            "name": "button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Zjistit více",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_66fbf22a4743d",
             "label": "Projects",
             "name": "projects",
@@ -58,7 +79,7 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "table",
+            "layout": "row",
             "pagination": 0,
             "min": 0,
             "max": 0,
@@ -93,7 +114,7 @@
                     "label": "Project_description",
                     "name": "project_description",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -102,12 +123,12 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Nový web pro začínající společnost",
+                    "default_value": "",
                     "maxlength": "",
-                    "allow_in_bindings": 0,
+                    "allow_in_bindings": 1,
+                    "rows": "",
                     "placeholder": "",
-                    "prepend": "",
-                    "append": "",
+                    "new_lines": "",
                     "parent_repeater": "field_66fbf22a4743d"
                 },
                 {
@@ -197,5 +218,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1727788127
+    "modified": 1730798378
 }

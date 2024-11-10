@@ -6,7 +6,6 @@
 
 $heading = esc_attr(get_field('heading'));
 $testimonial_count = esc_attr(get_field('testimonial_count'));
-
 $args = array(
   'post_type' => 'reviews',
   'posts_per_page' => $testimonial_count, 

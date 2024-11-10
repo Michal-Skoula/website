@@ -9,12 +9,11 @@
 ?>
 <div id="faq" class="section">
   <div class="max-content-width row">
-    <div class="info">
-      <h2 class="animate left-to-right staggered"><?php echo $heading ?></h2>
-      <p class="animate left-to-right staggered"> <?php echo $description ?> </p>
+    <div class="animate left-to-right staggered info">
+      <h2 ><?php echo $heading ?></h2>
+      <div > <?php echo $description ?> </div>
     </div>
     <div class="questions">
-      <!-- Repeater field -->
       <?php 
       $count = 1;
       if(have_rows('faq_row')):
@@ -31,7 +30,7 @@
         <label for=" <?php echo $faq ?> " class="faq-question">
           <h3><?php the_sub_field('question')?></h3>
         </label>
-        <p id="<?php echo $answer ?>" class="faq-answer"><?php the_sub_field('answer')?></p>
+        <div id="<?php echo $answer ?>" class="faq-answer"><?php the_sub_field('answer')?></div>
       </div>
 
       <?php 
